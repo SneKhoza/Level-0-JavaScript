@@ -20,7 +20,7 @@ function commonCharacter(string1, string2) {
             j++;
         }
     }
-    return console.log("Common letters: " + commonString);
+    console.log("Common letters: " + commonString);
 }
 
 commonCharacter("house", "computers");
