@@ -20,7 +20,7 @@ function findVowels(vowelString) {
             j++;
         }
     }
-    return console.log("Vowels: " + CompleteString);
+    console.log("Vowels: " + CompleteString);
 }
 
 findVowels("Umuzi");
