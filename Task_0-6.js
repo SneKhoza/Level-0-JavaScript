@@ -5,6 +5,6 @@ function findMax() {
             maxNum = arguments[i];
         }
     }
-    return console.log(maxNum);
+    return maxNum;
 }
 findMax(1, 7, 3, 2, 6);
