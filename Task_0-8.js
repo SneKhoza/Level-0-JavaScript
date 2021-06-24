@@ -12,6 +12,6 @@ function convertNumToTime(num) {
     } else {
         timeString = hour + " hour, " + minute + " minute.";
     }
-    return console.log(timeString);
+    console.log(timeString);
 }
 convertNumToTime(121);
