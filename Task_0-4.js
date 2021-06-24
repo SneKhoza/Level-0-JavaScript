@@ -1,8 +1,8 @@
-function even_or_odd(num) {
+function evenOrOdd(num) {
     if (num % 2 == 0) {
-        return console.log('even');
+        console.log('even');
     } else {
-        return console.log('odd');
+        console.log('odd');
     }
 }
-even_or_odd(5);
+evenOrOdd(5);
