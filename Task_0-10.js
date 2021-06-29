@@ -11,7 +11,6 @@ function commonCharacter(string1, string2) {
     while (i < str1.length && j < str2.length) {
         if (sorted1[i] === sorted2[j]) {
             common.push(sorted1[i])
-            commonString = common.toString();
             i++;
             j++;
         } else if (sorted1[i] < sorted2[j]) {
@@ -20,7 +19,8 @@ function commonCharacter(string1, string2) {
             j++;
         }
     }
+    commonString = common.toString();
     console.log("Common letters: " + commonString);
 }
 
-commonCharacter("house", "computers");
+commonCharacter("computers", "house");
