@@ -1,6 +1,8 @@
 function triangle(num1, num2, num3) {
-    var semiP = (1 / 2) * (num1 + num2 + num3); //Calculating semiperimeter
-    var area = Math.round(Math.sqrt(semiP * (semiP - num1) * (semiP - num2) * (semiP - num3))); //Heron's formula
+    const semiP = (1 / 2) * (num1 + num2 + num3); // Calculating semiperimeter
+    const area = Math.round(
+        Math.sqrt(semiP * (semiP - num1) * (semiP - num2) * (semiP - num3))
+    ); // Heron's formula
     return area;
 }
-triangle(5, 7, 4)
+console.log(triangle(5, 7, 4));
