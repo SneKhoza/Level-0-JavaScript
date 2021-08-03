@@ -1,11 +1,11 @@
-function CelsiustoFahrenheit(numCelsius) {
-    var numFahrenheit = (numCelsius * (9 / 5)) + 32;
+function celsiustoFahrenheit(numCelsius) {
+    const numFahrenheit = numCelsius * (9 / 5) + 32;
     return numFahrenheit;
 }
-CelsiustoFahrenheit(2);
+console.log(celsiustoFahrenheit(2));
 
-function FahrenheitToCelsius(numFahrenheit) {
-    var numCelsius = ((numFahrenheit - 32) * 5) / 9;
+function fahrenheitToCelsius(numFahrenheit) {
+    const numCelsius = ((numFahrenheit - 32) * 5) / 9;
     return numCelsius;
 }
-FahrenheitToCelsius(35);
+console.log(fahrenheitToCelsius(35));
