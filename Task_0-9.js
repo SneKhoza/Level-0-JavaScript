@@ -1,22 +1,10 @@
 function findVowels(vowelString) {
     const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
-    const lowercaseString = vowelString.toLowerCase();
-    const stringArray = lowercaseString.split("");
-    const vowelSorted = vowels.concat().sort();
-    const stringArraySorted = stringArray.concat().sort();
+    const lowerCaseString = vowelString.toLowerCase();
     const vowelsFound = [];
-    let i = 0;
-    let j = 0;
-
-    while (i < stringArray.length && j < vowels.length) {
-        if (stringArraySorted[i] === vowelSorted[j]) {
-            vowelsFound.push(stringArraySorted[i]);
-            i++;
-            j++;
-        } else if (stringArraySorted[i] < vowelSorted[j]) {
-            i++;
-        } else {
-            j++;
+    for (let i = 0; i < lowerCaseString.length; i++) {
+        if (vowels.includes(lowerCaseString[i])) {
+            vowelsFound.push(lowerCaseString[i]);
         }
     }
 
