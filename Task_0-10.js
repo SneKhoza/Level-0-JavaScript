@@ -6,7 +6,13 @@ function commonCharacter(string1, string2) {
             common.push(string2[i]);
         }
     }
-    const commonString = common.join(", ");
+    const newCommon = [common[0]];
+    for (let k = 1; k < common.length; k++) {
+        if (common[k] !== common[k - 1]) {
+            newCommon.push(common[k]);
+        }
+    }
+    const commonString = newCommon.join(", ");
     console.log(`Common letters: ${commonString}`);
 }
 
