@@ -1,5 +1,5 @@
 function findVowels(vowelString) {
-    const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+    const vowels = ["a", "e", "i", "o", "u"];
     const lowerCaseString = vowelString.toLowerCase();
     const vowelsFound = [];
     for (let i = 0; i < lowerCaseString.length; i++) {
